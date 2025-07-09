@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-    base: '/Hammer_WebPage/',
+    base: '/',
   plugins: [react(),tailwindcss()],
 })
