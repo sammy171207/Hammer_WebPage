@@ -5,7 +5,7 @@ import { LiaInfinitySolid } from 'react-icons/lia'
 
 const Footer = React.memo(() => {
   return (
-    <footer className="w-full bg-gradient-to-b from-[#F5F3F0] to-[#DAD0C5] text-[#3C2E23]" aria-label="Site Footer">
+    <footer className="w-full bg-gradient-to-b from-[#F5F3F0] to-[#DAD0C5] text-[#3C2E23] fade-in" aria-label="Site Footer">
       {/* Center Section */}
       <div className="flex flex-col items-center text-center py-10 sm:py-16 px-2 sm:px-4">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-4 smooth main-text">

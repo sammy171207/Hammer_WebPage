@@ -34,7 +34,7 @@ const HeroPage = () => {
       <Header />
 
       {/* Hero Section */}
-      <div className="relative flex flex-col md:flex-row items-center justify-center mt-8 md:mt-16">
+      <div className="relative flex flex-col md:flex-row items-center justify-center mt-8 md:mt-16 fade-in">
         {/* Back Layer: Aura II */}
         <motion.h1
           initial={{ x: 200, opacity: 0 }}
@@ -64,14 +64,16 @@ const HeroPage = () => {
       </div>
 
       {/* Carousel Section */}
-      <HeadphoneSection />
+      <div className="fade-in">
+        <HeadphoneSection />
+      </div>
 
       {/* Feature Carousel */}
-      <div className="space-y-10 mt-10">
+      <div className="space-y-10 mt-10 fade-in">
         <FeatureCarousel data={featureData} />
       </div>
 
-      <div className='space-y-10 mt-10'>
+      <div className='space-y-10 mt-10 fade-in'>
         <EveryDetail
           text="Everything You Need to Know"
           paragraph="Explore the design, comfort, and quality behind our product. Each detail is crafted to perfection."
@@ -80,7 +82,9 @@ const HeroPage = () => {
           modal3={modal1}
         />
       </div>
-       <Footer/>
+      <div className="fade-in">
+        <Footer/>
+      </div>
     </div>
    
   )

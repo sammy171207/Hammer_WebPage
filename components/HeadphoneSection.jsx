@@ -38,7 +38,7 @@ const HeadphoneSection = () => {
   }
 
   return (
-    <div className="container relative grid justify-center mt-10 p-4 sm:p-6 overflow-hidden">
+    <div className="container relative grid justify-center mt-10 p-4 sm:p-6 overflow-hidden fade-in">
       <h2 className="main-text text-3xl sm:text-4xl md:text-5xl poppins-bold text-center mb-2 sm:mb-3 smooth">
         Your Style. Your Hand
       </h2>

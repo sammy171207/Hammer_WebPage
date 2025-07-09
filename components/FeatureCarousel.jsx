@@ -36,7 +36,7 @@ const FeatureCarousel = React.memo(({ data }) => {
   }
 
   return (
-    <section className="relative w-full overflow-hidden" aria-label="Feature Carousel">
+    <section className="relative w-full overflow-hidden fade-in" aria-label="Feature Carousel">
       <div className="relative h-auto min-h-[260px] sm:min-h-[320px] md:min-h-[400px]">
         <AnimatePresence initial={false} custom={1}>
           <motion.div
