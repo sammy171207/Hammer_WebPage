@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 // Import images
-import headphone1 from '../src/assets/GreenHeadPhone.png'
-import headphone2 from '../src/assets/RedHeadPhone.png'
-import headphone3 from '../src/assets/YellowHeadPhone.png'
+import headphone1 from '../assets/GreenHeadPhone.png'
+import headphone2 from '../assets/RedHeadphone.png'
+import headphone3 from '../assets/YellowHeadphone.png'
 
 // Headphone image array
 const images = [headphone1, headphone2, headphone3]
@@ -93,7 +93,6 @@ const HeadphoneSection = () => {
               ${dotColors[index]}
               ${currentIndex === index ? 'scale-125 border-gray-800' : 'opacity-60'}
             `}
-            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
