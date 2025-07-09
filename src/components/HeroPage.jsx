@@ -2,12 +2,12 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Header from '../commons/Header'
 import headphone from '../assets/Headphone.png'
+import EveryDetail from './EveryDetail'
 import HeadphoneSection from './HeadphoneSection'
-import FeatureCarousel from './FeatureCarousel' // ✅ Corrected here
+import FeatureCarousel from './FeatureCarousel'
 import modal from '../assets/HeadphoneModel.png'
 import modal1 from '../assets/HeadphoneDetail.png'
 import modal2 from '../assets/HeadphoneBag.png'
-import EveryDetail from './EveryDetail'
 import Footer from '../commons/Footer'
 
 const featureData = [
