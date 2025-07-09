@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 // Import images
-import headphone1 from '../assets/GreenHeadPhone.png'
+import headphone1 from '../assets/Greenphone.png'
 import headphone2 from '../assets/RedHeadphone.png'
 import headphone3 from '../assets/YellowHeadphone.png'
 
