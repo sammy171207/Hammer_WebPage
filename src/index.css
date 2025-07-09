@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+/* =====================
+   Typography Utilities
+   ===================== */
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* =====================
+   Color & Gradient Utilities
+   ===================== */
+.primary-bg {
+  background-image: linear-gradient(to bottom, #D2CDC6, #F5F5F5);
+}
+.main-text {
+  color: #52483E;
+}
+.second-text {
+  background-image: linear-gradient(to top, #DACCBC, #AFA497);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.gradient-1 {
+  background: linear-gradient(to left, #D2CDC6, #F8BF93);
+}
+.gradient-2 {
+  background: linear-gradient(to left, #D8B74B, #F2EBE3);
+}
+.gradient-3 {
+  background: linear-gradient(to left, #D2CDC6, #F2EBE3);
+}
+
+/* =====================
+   Border & Shadow Utilities
+   ===================== */
+.rounded-lg {
+  border-radius: 10px;
+}
+.rounded-xl {
+  border-radius: 1rem;
+}
+.shadow-lg {
+  box-shadow: 0 8px 24px rgba(80, 80, 80, 0.12), 0 1.5px 4px rgba(80, 80, 80, 0.10);
+}
+.drop-shadow-xl {
+  filter: drop-shadow(0 8px 24px rgba(80, 80, 80, 0.18));
+}
+
+/* =====================
+   Animation & Transition Utilities
+   ===================== */
+.smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fade-in {
+  animation: fadeIn 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =====================
+   Accessibility Utilities
+   ===================== */
+.focus-ring {
+  outline: 2px solid #3C2E23;
+  outline-offset: 2px;
+}
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+/* =====================
+   Responsive Utilities
+   ===================== */
+html {
+  font-size: 16px;
+}
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 12px;
+  }
+}
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 640px) {
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+/* =====================
+   Carousel & Scrollbar Utilities
+   ===================== */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* =====================
+   Feature Card Classes (now using utilities)
+   ===================== */
+.feature-1 {
+  composes: gradient-1 rounded-lg;
+}
+.feature-2 {
+  composes: gradient-2 rounded-lg;
+}
+.feature-3 {
+  composes: gradient-3 rounded-lg;
+}
+

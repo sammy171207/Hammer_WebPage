@@ -1,0 +1,18 @@
+/* Custom App styles for enhanced look */
+
+.shadow-lg {
+  box-shadow: 0 8px 24px rgba(80, 80, 80, 0.12), 0 1.5px 4px rgba(80, 80, 80, 0.10);
+}
+
+.rounded-xl {
+  border-radius: 1rem;
+}
+
+.smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Drop shadow for images */
+.drop-shadow-xl {
+  filter: drop-shadow(0 8px 24px rgba(80, 80, 80, 0.18));
+}

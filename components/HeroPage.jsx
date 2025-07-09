@@ -1,0 +1,89 @@
+import React from 'react'
+import { motion } from 'framer-motion'
+import Header from '../commons/Header'
+import headphone from '../src/assets/Headphone.png'
+import HeadphoneSection from './HeadphoneSection'
+import FeatureCarousel from './FeatureCarousel' // ✅ Corrected here
+import modal from '../src/assets/HeadphoneModel.png'
+import modal1 from '../src/assets/HeadphoneDetail.png'
+import modal2 from '../src/assets/HeadphoneBag.png'
+import EveryDetail from './EveryDetail'
+import Footer from '../commons/Footer'
+
+const featureData = [
+  {
+    text: 'Lorem ipsum dolor sit amet\nconsectetur adipisicing elit. Excepturi, fugit!',
+    image: modal,
+    className: 'feature-1',
+  },
+  {
+    text: 'Doloribus amet doloremque\nvoluptate omnis alias numquam labore.',
+    image: modal1,
+    className: 'feature-2',
+  },
+  {
+    text: 'Fugiat eligendi maxime\naccusantium molestiae eveniet natus.',
+    image: modal2,
+    className: 'feature-3',
+  },
+]
+
+const HeroPage = () => {
+  return (
+    <div className="container flex flex-col justify-center relative min-h-screen px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32">
+      <Header />
+
+      {/* Hero Section */}
+      <div className="relative flex flex-col md:flex-row items-center justify-center mt-8 md:mt-16">
+        {/* Back Layer: Aura II */}
+        <motion.h1
+          initial={{ x: 200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 2, ease: 'easeOut' }}
+          className="absolute right-2 md:right-8 bottom-1/4 md:bottom-2/12 transform -translate-x-1/2 z-0 text-5xl sm:text-7xl md:text-8xl lg:text-9xl poppins-bold second-text select-none pointer-events-none smooth"
+        >
+          Aura II
+        </motion.h1>
+
+        {/* Middle Layer: Image */}
+        <img
+          className="mx-auto w-4/5 sm:w-3/5 md:w-2/5 max-w-2xl relative z-10 drop-shadow-xl smooth"
+          src={headphone}
+          alt="headphone"
+        />
+
+        {/* Front Layer: Resonance */}
+        <motion.h1
+          initial={{ x: -200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 2, ease: 'easeOut' }}
+          className="absolute left-1/2 md:left-1/3 top-1/4 transform -translate-x-1/2 z-20 text-5xl sm:text-7xl md:text-8xl lg:text-9xl poppins-bold main-text select-none pointer-events-none smooth"
+        >
+          Resonance
+        </motion.h1>
+      </div>
+
+      {/* Carousel Section */}
+      <HeadphoneSection />
+
+      {/* Feature Carousel */}
+      <div className="space-y-10 mt-10">
+        <FeatureCarousel data={featureData} />
+      </div>
+
+      <div className='space-y-10 mt-10'>
+        <EveryDetail
+          text="Everything You Need to Know"
+          paragraph="Explore the design, comfort, and quality behind our product. Each detail is crafted to perfection."
+          modal1={modal}
+          modal2={modal2}
+          modal3={modal1}
+        />
+      </div>
+       <Footer/>
+    </div>
+   
+  )
+}
+
+export default HeroPage
