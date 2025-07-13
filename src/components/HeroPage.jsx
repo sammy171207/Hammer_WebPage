@@ -9,6 +9,9 @@ import modal from '../assets/HeadphoneModel.png'
 import modal1 from '../assets/HeadphoneDetail.png'
 import modal2 from '../assets/HeadphoneBag.png'
 import Footer from '../commons/Footer'
+import detail1 from '../assets/Details1.png'
+import detail2 from '../assets/Details2.png'
+import detail3 from '../assets/Details3.png'
 
 const featureData = [
   {
@@ -39,9 +42,19 @@ const HeroPage = () => {
         <motion.h1
           initial={{ x: 200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 2, ease: 'easeOut' }}
-          className="absolute right-2 md:right-8 bottom-1/4 md:bottom-2/12 transform -translate-x-1/2 z-0 text-5xl sm:text-7xl md:text-8xl lg:text-9xl poppins-bold second-text select-none pointer-events-none smooth"
-        >
+          transition={{ duration: 2, ease: 'easeInOut' }}
+className="
+  absolute 
+  right-1/2 sm:right-2 md:right-8 
+  bottom-1/4 md:bottom-2/12 
+  transform sm:-translate-x-1/2 
+  z-0 
+  text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 
+  tracking-wide 
+  poppins-bold 
+  second-text 
+  select-none 
+  pointer-events-none"        >
           Aura II
         </motion.h1>
 
@@ -56,8 +69,8 @@ const HeroPage = () => {
         <motion.h1
           initial={{ x: -200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 2, ease: 'easeOut' }}
-          className="absolute left-1/2 md:left-1/3 top-1/4 transform -translate-x-1/2 z-20 text-5xl sm:text-7xl md:text-8xl lg:text-9xl poppins-bold main-text select-none pointer-events-none smooth"
+          transition={{ duration: 2, ease: 'easeInOut' }}
+          className="absolute left-1/2 md:left-1/3 top-1/4 transform -translate-x-1/2 z-20 text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-wide poppins-bold main-text select-none pointer-events-none"
         >
           Resonance
         </motion.h1>
@@ -77,16 +90,16 @@ const HeroPage = () => {
         <EveryDetail
           text="Everything You Need to Know"
           paragraph="Explore the design, comfort, and quality behind our product. Each detail is crafted to perfection."
-          modal1={modal}
-          modal2={modal2}
-          modal3={modal1}
+          modal1={detail1}
+          modal2={detail3}
+          modal3={detail2}
         />
       </div>
       <div className="fade-in">
-        <Footer/>
+        <Footer />
       </div>
     </div>
-   
+
   )
 }
 
